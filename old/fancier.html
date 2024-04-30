@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>mijn portfolio!!</title>
+
+        <style> /*----------------------------------< SET UP >------------------------------------*/
+            @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+            :root {
+                --default-font-family: 'Merriweather';
+                --header-font-family: 'Inter Tight';
+
+                --default-text-color: #ffffff;
+                --darker-text-color: #a3a3a3;
+                --dark-gradient: radial-gradient(#181818 0%, #000000 75%);
+            }
+            
+            body {
+                background-color: #000000;
+                color: var(--default-text-color);
+                font-family: var(--default-font-family);
+            }
+        </style>
+
+        <style> /*-------------------------------< LANDING PAGE >---------------------------------*/
+
+            #first_background {
+                background-image: var(--dark-gradient);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+            #landing_page {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            #landing_page h1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 900px;
+                transform: translate(-50%, -100%);
+                font-size: 75px;
+                text-align: center;
+                line-height: 75px;
+            }
+            #landing_page h1 .s1 {
+                font-size: 40px;
+                color: var(--darker-text-color);
+            }
+            #landing_page h1 .s2 {
+                font-size: 60px;
+                margin-top: -10px;
+            }
+        </style>
+
+        <style>/*------------------------------------< CARDS >--------------------------------------*/
+            #cards {
+                position: absolute;
+                top: 100vh;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            #check {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #ffffff;
+                width: 100px;
+                height: 10px;
+            }
+        </style>
+
+        <style>/*----------------------------------< SECTIONS >--------------------------------------*/
+            #sections {
+                position: fixed;
+                left: 5vw;
+                top: 40vh;
+                transform: translateY(-50%);
+            }
+
+            #sections ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            #sections ul li {
+                margin-bottom: 5px;
+            }
+
+            #sections ul li button {
+                width: 200px;
+                height: 50px;
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-family: var(--header-font-family);
+
+                transition: ease 0.25s;
+                transition-property: background-color, color;
+            }
+
+            #sections ul li button:hover {
+                background-color: white;
+                color: black;
+            }
+        </style>
+
+        <style> /*------------------------------------< LEGACY >------------------------------------------*/
+            #slides_container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 95vw;
+            }
+
+            #slides_list {
+                list-style: none;
+                padding-left: 5vw;
+            }
+
+            #slides_list li {
+                width: 100%;
+                height: 90vh;
+                border-left: 5px rgb(104, 104, 104) solid;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+
+            #slides_list li img {
+                border: white 2px solid;
+                border-radius: 3vh;
+                position: relative;
+                top: 40vh;
+                left: 85vw;
+                transform: translate(-100%, -50%);
+                height: 50vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="landing_page">
+            <div id="first_background"></div>
+            <h1>
+                <span class="s1">Ashton Havens</span><br>
+                Dolor Sit Amet<br>
+                <span class="s2">Consectetur</span>
+            </h1>
+            <!--p>Website portfolio</p>
+            <p>Ashton Havens</p-->
+        </div>
+        <div id="cards">
+            <div class="card" id="card1">
+                
+            </div>
+        </div>
+        <div id="sections">
+            <ul>
+                <li><button>SECTION1</button></li>
+                <li><button>SECTION2</button></li>
+                <li><button>SECTION3</button></li>
+            </ul>
+        </div>
+        <script>
+            const $ = (e) => document.getElementById(e);
+
+        </script>
+    </body>
+</html>

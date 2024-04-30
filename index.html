@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Website Portfolio - Ashton Havens</title>
         <link rel="stylesheet" href="sections.css">
+        <style>
+            #me {
+                overflow: hidden;
+                position: absolute;
+                top: 145px;
+                left: calc(50% - 350px);
+                transform: translateX(-50%);
+                border-radius: 50px;
+            }
+            #me img {
+                position: relative;
+                top: -50px;
+                border-radius: 50px;
+                box-shadow: 0px 5px 5px #000000a9;
+            }
+        </style>
     </head>
     <body>
         <div id="sections">
             <div class="section_list" id="slist_left">
                 <ul>
-                    <li><a href="/album.html"><div>Album Cover</div></a></li>
-                    <li><a href="/halloween.html"><div>Halloween Scene</div></a></li>
+                    <li><a href="album.html"><div>Album Cover</div></a></li>
+                    <li><a href="halloween.html"><div>Halloween Scene</div></a></li>
                 </ul>
             </div>
-            <a href="/" title="Home"><img id="logo" src="images/fish.png"></a>
+            <a href="" title="Home"><img id="logo" src="images/fish.png"></a>
             <div class="section_list" id="slist_right">
                 <ul>
-                    <li><a href="/magazine.html"><div>Magazine Cover</div></a></li>
-                    <li><a href="/movie.html"><div>Movie Poster</div></a></li>
+                    <li><a href="magazine.html"><div>Magazine Cover</div></a></li>
+                    <li><a href="movie.html"><div>Movie Poster</div></a></li>
                 </ul>
+            </div>
+        </div>
+        <div id="main">
+            <h1>About Me</h1>
+            <div id="me">
+                <img src="images/me.png" width="350">
             </div>
         </div>
     </body>
