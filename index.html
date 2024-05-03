@@ -2,23 +2,9 @@
 <html>
     <head>
         <title>Website Portfolio - Ashton Havens</title>
-        <link rel="stylesheet" href="sections.css">
-        <style>
-            #me {
-                overflow: hidden;
-                position: absolute;
-                top: 145px;
-                left: calc(50% - 350px);
-                transform: translateX(-50%);
-                border-radius: 50px;
-            }
-            #me img {
-                position: relative;
-                top: -50px;
-                border-radius: 50px;
-                box-shadow: 0px 5px 5px #000000a9;
-            }
-        </style>
+        <link rel="stylesheet" href="sections.css?v=1">
+
+        <link rel="icon" type="image/x-icon" href="images/fish.png">
     </head>
     <body>
         <div id="sections">
@@ -37,9 +23,22 @@
             </div>
         </div>
         <div id="main">
+            <p id="branding">www.<span>ashtonhavens</span>.com</p>
             <h1>About Me</h1>
-            <div id="me">
-                <img src="images/me.png" width="350">
+            <div id="content">
+                <div id="me" class="imgcontainer">
+                    <img src="images/me.png" width="100%">
+                </div>
+                <p id="info">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    My name is <span class="black">Ashton Havens</span>. I am a freshman here at Imperial High School
+                    and I enjoy working with computers both for leisure and for designing and programming. I have always
+                    liked to take photos of the world around me and Computer Graphics has let me do that more. It
+                    has also taught me much about photography that I wouldn't have learned if I hadn't been in this class.
+                    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    I enjoyed taking all of these photos and working on all of these projects because they allowed me to
+                    get more practice at photography and photoshop.
+                </p>
             </div>
         </div>
     </body>
