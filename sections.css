@@ -27,6 +27,8 @@ body {
     font-family: 'Lora';
     font-size: 22px;
     font-weight: 600;
+
+    background-color: #fffffb;
 }
 
 @media screen and (max-height: 950px) {
@@ -239,13 +241,15 @@ body {
     /*align-items: center;*/
     background-image: radial-gradient(ellipse at bottom left, #9dbae7, #adf3ff);
     padding: calc(var(--sections-height) * 50 / 100);
-    border: calc(var(--sections-height) * 6 / 100) #95b3ce solid;
+    /*border: calc(var(--sections-height) * 6 / 100) #95b3ce solid;*/
     border-radius: calc(var(--sections-height) * 15 / 100);
     flex-wrap: wrap;
 
     font-size: calc(var(--sections-height) * 22 / 100);
     color: #313131;
     line-height: calc(var(--sections-height) * 35 / 100);
+
+    box-shadow: 0px 5px 5px #000000ab;
 }
 
 .break {
@@ -257,4 +261,15 @@ body {
     margin-top: calc(var(--sections-height) * 5 / 100);
     margin-bottom: 0;
     padding-left: calc(var(--sections-height) * 40 / 100);
+}
+
+.contact {
+    font-size: calc(var(--sections-height) * 17 / 100);
+}
+
+#extender {
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color: transparent;
 }
