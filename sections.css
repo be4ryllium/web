@@ -64,9 +64,6 @@ body {
 #slist_left {
     margin-right: var(--slist-separation);
 }  
-#slist_right {
-    margin-left: var(--slist-separation);
-}
 
 #slist_left ul li {
     margin-right: 5px;
@@ -99,8 +96,9 @@ body {
 
     height: calc(var(--sections-height) + var(--ppsl) * 2);
     width: calc(var(--sections-height) + var(--ppsl) * 2);
-    position: relative;
-    top: calc(var(--ppsl) * -0.5);
+    position: absolute;
+    top: calc(var(--sections-height) * 3 / 100);
+    left: calc(var(--sections-height) * 3 / 100);
     background-color: #faf9df;
     border-radius: 50%;
     border: calc(var(--sections-height) * 5 / 100) #ccc79b solid;
@@ -111,7 +109,7 @@ body {
     /*box-shadow: 0px 5px 5px #0000009a;*/
 
     transition: cubic-bezier(.37,1.08,.37,.87) 0.2s;
-    transition-property: margin, height, width, top, box-shadow;
+    transition-property: margin, height, width, box-shadow, left;
 }
 
 #logo:hover {
@@ -119,7 +117,7 @@ body {
     margin-right: calc(-10px + var(--ppsl));
     height: calc(var(--sections-height) + var(--ppsl) * 2 + 10px);
     width: calc(var(--sections-height) + var(--ppsl) * 2 + 10px);
-    top: calc(var(--ppsl) * -0.5 - 2px);
+    left: calc(var(--sections-height) * 7 / 100);
     /*box-shadow: 0px 8px 7px #0000009a;*/
 }
 
@@ -202,6 +200,7 @@ body {
     right: calc(50% + var(--sections-height) * 250 / 100);*/
     border-radius: calc(var(--sections-height) * 20 / 100);
     width: calc(var(--sections-height) * 325 / 100);
+    margin-bottom: calc(var(--sections-height) * 15 / 100);
 }
 .imgcontainer img {
     position: relative;
@@ -217,8 +216,8 @@ body {
 
 #branding {
     position: absolute;
-    top: calc(var(--sections-height) * 15 / 100);
-    left: calc(var(--sections-height) * 25 / 100);
+    top: calc(var(--sections-height) * 50 / 100);
+    left: calc(var(--sections-height) * 20 / 100);
     color: #868686;
     font-size: calc(var(--sections-height) * 15 / 100);
 }
